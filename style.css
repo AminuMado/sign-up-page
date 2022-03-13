@@ -24,6 +24,7 @@
   background-color: var(--bg-color);
   color: var(--font-color);
   display: flex;
+  align-items: center;
 }
 .image-container {
   width: 40%;
@@ -58,6 +59,7 @@
 .light-dark-btn-container {
   position: absolute;
   right: 0;
+  z-index: 1;
 }
 input[type="checkbox"] {
   width: 0;
@@ -106,14 +108,14 @@ input[type="checkbox"] {
 /* sign up section */
 .sign-up-container {
   display: flex;
-  height: 500px;
+  height: 400px;
   background-color: gray;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 15px;
   position: relative;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 .sign-up-section,
 .log-in-section {
@@ -129,4 +131,19 @@ input[type="checkbox"] {
 .sign-up-container button {
   padding: 5px;
   margin-top: 30px;
+}
+.sign-up-page {
+  position: absolute;
+  width: 415px;
+  height: 500px;
+  background: rebeccapurple;
+  transition: all 0.5s;
+}
+.left {
+  transition: all 0.5s;
+  transform: translate(-45%);
+}
+.right {
+  transition: 0.5s;
+  transform: translate(45%);
 }
