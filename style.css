@@ -5,12 +5,12 @@
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(20, 109, 57);
   display: flex;
 }
 .image-container {
   width: 40%;
-  background-color: goldenrod;
+  background-color: black;
   position: relative;
 }
 .img-logo-container {
@@ -30,7 +30,8 @@
   justify-content: center;
   height: 100%;
 }
+
 .img-photo {
-  width: 125px;
-  height: 175px;
+  width: 35rem;
+  height: 50rem;
 }
