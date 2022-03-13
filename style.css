@@ -50,7 +50,7 @@ label {
   display: block;
   width: 8rem;
   height: 3rem;
-  background-color: #477a85;
+  background-color: black;
   border-radius: 100px;
   position: relative;
   cursor: pointer;
@@ -62,7 +62,7 @@ label::after {
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #e8f5f7;
+  background-color: white;
   position: absolute;
   border-radius: 70px;
   top: 8%;
@@ -75,8 +75,11 @@ input:checked + label:after {
 }
 
 input:checked + label {
-  background-color: #243d42;
+  background-color: white;
 }
 label:active:after {
   width: 2.95rem;
+}
+input:checked + ::after {
+  background-color: black;
 }
