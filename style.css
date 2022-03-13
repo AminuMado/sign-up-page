@@ -27,7 +27,7 @@
 }
 .image-container {
   width: 40%;
-  background-color: black;
+  background-color: var(--bg-color);
   position: relative;
 }
 .img-logo-container {
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  background-color: var(--heading-color);
 }
 .img-logo {
   width: 65%;
@@ -46,6 +47,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-color: var(--primary-color);
 }
 
 .img-photo {
