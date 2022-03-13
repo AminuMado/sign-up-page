@@ -3,7 +3,7 @@
   --secondary-color: #2a3d45, #a8dadc;
   --font-color: #7a6c5d;
   --bg-color: #f8f9fa;
-  --heading-color: #e35426;
+  --heading-color: rgba(0, 0, 0, 0.7);
 }
 [data-theme="dark"] {
   --primary-color: #21c05b;
@@ -65,7 +65,7 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-label {
+.light-dark-btn-container label {
   display: block;
   width: 8rem;
   height: 3rem;
@@ -77,7 +77,7 @@ label {
   box-shadow: 0 0 20px #477a8550;
 }
 
-label::after {
+.light-dark-btn-container label::after {
   content: "";
   width: 2.5rem;
   height: 2.5rem;
@@ -88,17 +88,17 @@ label::after {
   left: 10px;
   transition: 0.5s;
 }
-input:checked + label:after {
+.light-dark-btn-container input:checked + label:after {
   left: calc(100% - 10px);
   transform: translateX(-100%);
 }
 
-input:checked + label {
+.light-dark-btn-container input:checked + label {
   background-color: white;
 }
-label:active:after {
+.light-dark-btn-container label:active:after {
   width: 2.95rem;
 }
-input:checked + ::after {
+.light-dark-btn-container input:checked + ::after {
   background-color: black;
 }
