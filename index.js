@@ -22,3 +22,23 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+// logic for moving the sign up page
+const signUpBtn = document.querySelector("#sign-up-btn");
+const logInBtn = document.querySelector("#log-in-btn");
+console.log(signUpBtn);
+console.log(logInBtn);
+
+function changeClass() {
+  const signUpPage = document.querySelector(".sign-up-page");
+  console.log(signUpPage);
+  if (signUpPage.classList.contains("left")) {
+    signUpPage.classList.remove("left");
+    signUpPage.classList.add("right");
+  } else {
+    signUpPage.classList.remove("right");
+    signUpPage.classList.add("left");
+  }
+}
+logInBtn.addEventListener("click", changeClass);
+signUpBtn.addEventListener("click", changeClass);
