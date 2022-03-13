@@ -24,6 +24,9 @@
   background-color: var(--bg-color);
   color: var(--font-color);
   display: flex;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
 }
 
 /* light and dark button */
