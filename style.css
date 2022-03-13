@@ -3,14 +3,14 @@
   --secondary-color: #2a3d45, #a8dadc;
   --font-color: #7a6c5d;
   --bg-color: #f8f9fa;
-  --heading-color: rgba(0, 0, 0, 0.7);
+  --heading-color: rgba(0, 0, 0, 0.3);
 }
 [data-theme="dark"] {
   --primary-color: #21c05b;
   --secondary-color: #8ecae6;
   --font-color: #af291e;
   --bg-color: #161625;
-  --heading-color: #495057;
+  --heading-color: rgba(56, 95, 221, 0.5212);
 }
 
 * {
@@ -26,7 +26,7 @@
   display: flex;
 }
 .image-container {
-  width: 40%;
+  width: 30%;
   background-color: var(--bg-color);
   position: relative;
 }
@@ -45,7 +45,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   background-color: var(--primary-color);
 }
