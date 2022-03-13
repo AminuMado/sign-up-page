@@ -36,6 +36,10 @@
   height: 50rem;
 }
 /* light and dark button */
+.light-dark-btn-container {
+  position: absolute;
+  right: 0;
+}
 input[type="checkbox"] {
   width: 0;
   height: 0;
@@ -44,8 +48,8 @@ input[type="checkbox"] {
 
 label {
   display: block;
-  width: 500px;
-  height: 150px;
+  width: 8rem;
+  height: 3rem;
   background-color: #477a85;
   border-radius: 100px;
   position: relative;
@@ -56,13 +60,13 @@ label {
 
 label::after {
   content: "";
-  width: 120px;
-  height: 120px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #e8f5f7;
   position: absolute;
   border-radius: 70px;
-  top: 15px;
-  left: 15px;
+  top: 8%;
+  left: 10px;
   transition: 0.5s;
 }
 input:checked + label:after {
@@ -74,5 +78,5 @@ input:checked + label {
   background-color: #243d42;
 }
 label:active:after {
-  width: 160px;
+  width: 2.95rem;
 }
