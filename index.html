@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="index.js" defer></script>
     <title>Sign Up Page</title>
@@ -29,23 +34,44 @@
           <button id="log-in-btn">Log In</button>
         </section>
         <div class="sign-up-page left">
-          <form action="#">
-            <p class="form-title">Sign Up</p>
-            <div class="input">
-              <label for="fullName">Full Name</label>
-              <input type="text" name="full-Name" id="full-Name" required="" />
+          <form id="form" class="form">
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" placeholder="John Doe" id="username" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
             </div>
-            <div class="input">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required="" />
+            <div class="form-control">
+              <label for="username">Email</label>
+              <input
+                type="email"
+                placeholder="johndoe@example.com"
+                id="email"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
             </div>
-            <div class="input">
-              <label for="password">Password</label>
-              <input type="password" name="passwor" id="passwor" required="" />
+            <div class="form-control">
+              <label for="username">Password</label>
+              <input type="password" placeholder="Password" id="password" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
             </div>
-            <div class="create-account-btn-container">
-              <button type="submit">Create Account</button>
+            <div class="form-control">
+              <label for="username">Password check</label>
+              <input
+                type="password"
+                placeholder="Password two"
+                id="password2"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
             </div>
+            <button>Submit</button>
           </form>
         </div>
       </div>
